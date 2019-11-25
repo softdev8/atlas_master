@@ -1,0 +1,99 @@
+#firms {
+  position: relative;
+  flex: 0 0 calc((100% - 1150px) / 2);
+  max-width: calc((100% - 1150px) / 2);
+  padding: 15px;
+
+  .firms-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    color: #fff;
+    background: #173257;
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+
+    &.empty,
+    &.collapsed {
+      border-radius: 4px;
+    }
+  }
+
+  .firms-list {
+    border-left: 1px solid rgba(0, 0, 0, .125);
+    border-right: 1px solid rgba(0, 0, 0, .125);
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0 0 4px 4px;
+    max-height: 735px;
+    overflow-y: auto;
+
+    li {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 20px;
+      background: #fff;
+      border-bottom: 1px solid rgba(0, 0, 0, .125);
+      cursor: pointer;
+
+      &.active {
+        font-weight: 600;
+      }
+
+      &:hover {
+        background: #f7f7f7;
+      }
+
+      &:last-child {
+        border-bottom: none;
+        border-radius: 0 0 4px 4px;
+      }
+    }
+  }
+
+  .salary-info {
+    position: absolute;
+    top: 0;
+    right: 100%;
+
+    z-index: 1000;
+
+    display: none;
+    width: 300px;
+
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.075);
+
+    .salary-header {
+      padding: 12px 20px;
+      font-weight: 400;
+      color: #fff;
+      background: #173257;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .salary-table {
+      background: #fff;
+      border-radius: 0 0 4px 4px;
+
+      .salary-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 15px;
+        font-weight: 400;
+        border-bottom: 1px solid rgba(0, 0, 0, .125);
+
+        &.heading {
+          padding: 12px 15px;
+
+          span {
+            font-weight: 500;
+          }
+        }
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

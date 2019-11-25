@@ -1,0 +1,32 @@
+/**-------------------------------
+           MEDIAQUERIES
+ --------------------------------*/
+
+@media (max-width: 992px) {
+  .wrapper{
+    overflow-x: hidden;
+  }
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #sidebarCollapse span {
+    display: none;
+  }
+  #content-wrapper {
+    width: auto;
+    padding-left: 0px;
+  }
+  .stretch{
+    padding-left: 250px !important;
+    margin-right: -250px !important;
+  }
+  .mini-panel{
+    display: flex;
+  }
+  .admin-title-hide{
+    opacity: 1;
+  }
+}

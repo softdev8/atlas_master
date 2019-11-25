@@ -1,0 +1,15 @@
+/* Alarm block ajax */
+.alert-dismissible .close{
+  padding: 0.6rem 1.25rem;
+}
+
+.alert {
+  right: 5px;
+  position: absolute;
+
+  -webkit-box-shadow: 0 10px 12px 0 rgba(0,0,0,.2);
+  box-shadow: 0 10px 12px 0 rgba(0,0,0,.2);
+  -webkit-transition: .15s;
+  -o-transition: .15s;
+  transition: .15s;
+}

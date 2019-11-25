@@ -1,0 +1,147 @@
+/*
+ * BUTTONS
+ */
+.btn{
+  min-width: 22px;
+}
+.btn-xs {
+  font-size: 11px;
+  border-radius: 1px;
+  padding: 2px 5px;
+}
+.btn-sm, .btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 11px;
+  border-radius: 1px;
+}
+.btn-primary{
+  background-color: #4a9be5;
+  border-color: #4795dc;
+  color: white;
+}
+
+.btn-secondary{
+  background-color: #6B7687;
+  border-color: #5e6877;
+  color: white;
+}
+
+.btn-success {
+  background-color: #2ad58b;
+  border-color: #2ad58b;
+}
+
+.btn-warning {
+  background-color: #FF6736;
+  border-color: #FF6736;
+}
+
+.btn-danger {
+  background-color: #f43744;
+  border-color: #f43744;
+}
+
+.btn-info {
+  background-color: #42b2e6;
+  border-color: #42b2e6;
+}
+
+.btn-purple {
+  background-color: #926DDE;
+  border-color: #8564cb;
+  color: white;
+}
+
+.badge-yellow {
+  background-color: #FCC525;
+  border-color: #ebb822;
+}
+
+.badge-pink {
+  background-color: #F96197;
+  border-color: #d35280;
+}
+
+
+.btn-brown {
+  background-color: #8D6658;
+  border-color: #7f5c4f;
+  color: white;
+}
+
+.btn-light{
+  background-color: #fcfcfc;
+  border-color: #f5f5f5;
+}
+.btn-dark{
+  background-color: #ABABAB;
+  border-color: #ABABAB;
+}
+
+
+.btn-shadow{
+  //border: 2px solid #2ad58b;
+  letter-spacing: .1em;
+  border-radius: 2px;
+  transition: all .2s;
+}
+.btn-shadow:hover{
+  box-shadow: 0.0em 0.3em 7px rgba(122,122,122,0.5);
+}
+
+.product-type-delete-btn{
+  color: #ffffff;
+  min-width: 74px;
+}
+
+.product-side-delete-btn, .product-material-delete-btn, .product-cover-delete-btn{
+  color: #ffffff;
+  min-width: 74px;
+}
+.swal-footer {
+  text-align: center;
+}
+.swal-button {
+  font-size: 12px;
+  font-weight: inherit;
+  border-radius: 1px;
+  padding: 6px 30px;
+}
+.swal-button--danger {
+  background-color: #f43744;
+  border-color: #f43744;
+}
+
+/**
+ * ADD PICTURE BUTTON
+ */
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  -ms-filter: 'alpha(opacity=0)';
+  font-size: 200px;
+  direction: ltr;
+  cursor: pointer;
+}
+
+
+/**
+ * Add file input
+ */
+
+/** Styling input[type=file] **/
+.btn-file {
+  position: relative; overflow: hidden; margin-right: 4px;
+}
+.btn-file input {
+  position: absolute; top: 0; right: 0; margin: 0; opacity: 0; filter: alpha(opacity=0);
+  transform: translate(-300px, 0) scale(4); font-size: 23px; direction: ltr; cursor: pointer;
+}

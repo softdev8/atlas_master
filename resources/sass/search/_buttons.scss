@@ -1,0 +1,23 @@
+#filter-component {
+    .btn-primary {
+        color: #fff;
+        background-color: #173257;
+        border-color: #173257;
+
+        &:hover {
+            background-color: #244f8a;
+            border-color: #244f8a;
+        }
+    }
+
+    .btn-outline-primary {
+        color: #173257;
+        background-color: #fff;
+        border-color: #173257;
+        &:hover {
+            background-color: #244f8a;
+            border-color: #244f8a;
+            color: #fff;
+        }
+    }
+}

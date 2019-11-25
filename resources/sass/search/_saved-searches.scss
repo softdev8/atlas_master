@@ -1,0 +1,192 @@
+#saved-searches,
+#saved-projects {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 15px;
+
+  .header {
+    padding: 12px 20px;
+    color: #fff;
+    background: #173257;
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+
+    &.collapsed {
+      border-radius: 4px;
+    }
+  }
+
+  .content {
+    padding: 20px;
+    background: #fff;
+    border-left: 1px solid rgba(0, 0, 0, 0.125);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    border-right: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0 0 4px 4px;
+  }
+
+  .s-s-table {
+    display: flex;
+    flex-direction: column;
+
+    .s-s-head,
+    .s-s-body {
+      display: flex;
+      flex-direction: column;
+
+      .s-s-row {
+        display: flex;
+        flex-wrap: wrap;
+
+        .criteria {
+          flex: 0 0 55%;
+          max-width: 55%;
+
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .name,
+        .date,
+        .results {
+          flex: 0 0 15%;
+          max-width: 15%;
+        }
+
+        .title,
+        .last-open,
+        .candidates {
+          flex: 0 0 33.33%;
+          max-width: 33.33%;
+        }
+
+        .name,
+        .criteria,
+        .date,
+        .results,
+        .title,
+        .last-open,
+        .candidates {
+          padding: 12px 20px;
+          text-align: center;
+        }
+      }
+    }
+
+    .s-s-head {
+      .s-s-row {
+        color: #fff;
+        background: #173257;
+        border-radius: 4px 4px 0 0;
+      }
+    }
+
+    .s-s-body {
+      border-left: 1px solid rgba(0, 0, 0, 0.125);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+      border-right: 1px solid rgba(0, 0, 0, 0.125);
+      border-radius: 0 0 4px 4px;
+
+      .s-s-row {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+        background: #fff;
+        cursor: pointer;
+
+        .delete,
+        .export {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .results,
+        .delete,
+        .export {
+          flex: 0 0 7.5%;
+          max-width: 7.5%;
+        }
+
+        .candidates {
+          flex: 0 0 18.33%;
+          max-width: 18.33%;
+        }
+
+        .name,
+        .criteria,
+        .date,
+        .results,
+        .delete,
+        .title,
+        .last-open,
+        .candidates {
+          border-right: 1px solid rgba(0, 0, 0, 0.125);
+        }
+
+        &:hover,
+        &.isActive {
+          background: #f7f7f7;
+        }
+
+        &:last-child {
+          border-bottom: none;
+          border-radius: 0 0 4px 4px;
+        }
+      }
+    }
+  }
+
+  .s-s-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 4px;
+
+    .pages {
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .popup {
+    .form-group {
+      display: flex;
+      align-items: center;
+    }
+
+    form {
+      input {
+        border-radius: 4px !important;
+
+        &:focus {
+          background-color: #fff !important;
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  .loading-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+  }
+
+  .no-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 4px;
+  }
+}

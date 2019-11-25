@@ -1,0 +1,114 @@
+/**----------------------------
+        GENERAL STYLES
+ -----------------------------*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+  color: #636b6f;
+}
+
+p {
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+}
+
+a, a:hover, a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+input, select{
+  border: 1px solid rgba(0, 0, 0, 0.07) !important;
+  border-radius: 0px !important;
+}
+
+input:focus {
+  background-color: #F0F0F0 !important;
+}
+
+.navbar {
+  //background-image: -webkit-gradient(linear,left top,right top,from(#6d7fcc),to(#e5e8ff));
+  //background-image: -webkit-linear-gradient(left,#6d7fcc,#e5e8ff);
+  //background-image: -o-linear-gradient(left,#6d7fcc,#e5e8ff);
+  //background-image: linear-gradient(90deg,#6d7fcc,#e5e8ff);
+  background: #fff;
+  margin-bottom: 0px;
+  border-bottom: 1px solid rgba(230, 230, 230, 0.7);
+  padding: 11px 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #8c8c8c;
+  z-index: 900;
+}
+
+.nav-link{
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.navbar-light .navbar-brand {
+  font-size: 14px;
+  padding: 0.5rem;
+  color: #8c8c8c;
+}
+
+.sidebar-collapse-btn, quickview-collapse-btn{
+  padding: 0.5rem;
+  font-size: 18px;
+}
+
+.sidebar-collapse-btn:hover{
+  transform: rotate(90deg);
+}
+
+
+.close-quickview:hover {
+  i {
+    transition: all 0.3s;
+    color: crimson;
+  }
+}
+
+.navbar-nav>li:last-child {
+  margin-right: 15px;
+}
+
+.navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+
+#sidebarCollapse{
+  font-size: 14px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+  margin: 40px 0;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+.margin-bottom-50 {
+  margin-bottom: 50px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+.margin-top-30 {
+  margin-top: 30px;
+}
+.margin-top-50 {
+  margin-top: 50px;
+}

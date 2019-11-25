@@ -1,0 +1,333 @@
+#search-results {
+  flex: 0 0 1150px;
+  max-width: 1150px;
+  margin: 0 auto;
+
+  .popup {
+    .loading-spinner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 156px;
+    }
+
+    .congratulations-message {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 156px;
+
+      span {
+        margin-bottom: 10px;
+        font-size: 30px;
+      }
+
+      img {
+        display: block;
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  .matched,
+  .search-results-pagination,
+  .selected {
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .matched,
+  .filters,
+  .sorting,
+  .search-results-pagination,
+  .selected {
+    margin-bottom: 20px;
+    padding: 12px 20px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 4px;
+
+    .order-by {
+      padding-right: 13px;
+    }
+  }
+
+  .sorting {
+      .expand-all {
+          margin-left: 20px;
+      }
+  }
+
+  .selected {
+    display: flex;
+    align-items: center;
+
+    .info {
+      margin-right: auto;
+    }
+
+    .save-as {
+      margin-left: 20px;
+    }
+
+    .export {
+      margin-left: 20px;
+    }
+  }
+
+  .matched {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+
+    .select {
+      margin-left: 20px;
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      border-radius: 4px;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+          padding: 12px 20px;
+          background: #fff;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+          cursor: pointer;
+
+          &.active {
+            color: #173257;
+          }
+
+          &:first-child {
+            border-radius: 4px 4px 0 0;
+          }
+
+          &:last-child {
+            border-radius: 0 0 4px 4px;
+            border-bottom: none;
+          }
+
+          &:hover {
+            background: #f7f7f7;
+          }
+        }
+      }
+    }
+
+    .job-title {
+      display: flex;
+      flex: 0 0 30%;
+      max-width: 30%;
+    }
+
+    .word-search {
+      display: flex;
+      flex-direction: column;
+      flex: 0 0 50%;
+      max-width: 50%;
+      margin-left: auto;
+
+      .form-group {
+        display: flex;
+        align-items: center;
+      }
+
+      form {
+        input {
+          border-radius: 4px !important;
+
+          &:focus {
+            background-color: #fff !important;
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+
+  .search-results-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .pages {
+      span {
+        font-weight: 600;
+      }
+    }
+
+    .per-page-controls {
+      display: inline-block;
+      margin-left: 20px;
+
+      .per-page {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .candidates {
+    padding-top: 20px;
+
+    .candidate {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 20px;
+        background: rgba(0, 0, 0, .03);
+        border-radius: 4px 4px 0 0;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        cursor: pointer;
+
+        &.collapsed {
+          border-radius: 4px;
+        }
+
+        .name {
+          position: relative;
+          padding-left: 33px;
+
+          .fa-check {
+            color: #173257;
+          }
+
+          .fa-times {
+            color: #dc3545;
+          }
+
+          i {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            font-size: 30px;
+          }
+        }
+
+        .details {
+          position: relative;
+          span {
+            font-weight: 600;
+            &.firmranking{
+              margin-right: 10px;
+            }
+            &.linkedin{
+              margin-left: 28px;
+              margin-right: 5px;
+            }
+          }
+          a.icon-position {
+            width:25px;
+            display: inline-block;
+          }
+          i {
+            display: inline-block;
+            width: 1px;
+            height: 43px;
+            position: absolute;
+            font-style: normal;
+            margin-left: 5px;
+            margin-right: 5px;
+            border-left: solid 1px rgba(0, 0, 0, 0.25);
+            top: -8px;          
+          }
+        }
+      }
+
+      .body {
+        position: relative;
+        background: #fff;
+        border-radius: 0 0 4px 4px;
+        border-left: 1px solid rgba(0, 0, 0, 0.125);
+        border-right: 1px solid rgba(0, 0, 0, 0.125);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+
+        .suggest-an-edit {
+          position: absolute;
+          top: 12px;
+          right: 20px;
+        }
+
+        .item {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 12px 20px;
+
+          .key {
+            flex: 0 0 20%;
+            max-width: 20%;
+          }
+
+          .value {
+            flex: 0 0 80%;
+            max-width: 80%;
+
+            a {
+              color: #116cec;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .charts {
+    display: flex;
+
+    .column {
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding: 15px;
+    }
+
+    .chart {
+      .title {
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      #doughnut-chart {
+        background: url("../../../public/img/logo.png");
+        background-repeat: no-repeat;
+        background-size: 300px 300px;
+        background-position: center;
+      }
+
+      .items {
+        margin-top: 15px;
+
+        li {
+          display: flex;
+          align-items: center;
+
+          .rectangle {
+            display: block;
+            width: 18px;
+            height: 18px;
+          }
+
+          .label {
+            margin-right: auto;
+            padding-left: 9px;
+          }
+        }
+      }
+    }
+  }
+}

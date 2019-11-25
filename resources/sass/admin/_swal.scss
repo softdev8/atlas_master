@@ -1,0 +1,30 @@
+/*
+ * modal sweetalert
+ */
+
+//.swal-overlay {
+//  background-color: rgba(43, 165, 137, 0.45);
+//}
+
+.swal-modal{
+  width: 600px;
+  text-align: center;
+  border-radius: 3px;
+  .swal-title {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .swal-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: grey;
+    font-weight: 300;
+    line-height: 1.7em;
+  }
+  .swal-footer {}
+  .swal-button {}
+}

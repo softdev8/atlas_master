@@ -1,0 +1,128 @@
+/*
+ * CHATROOM
+ */
+#wrapper{
+  .overlay-bg-active{
+    opacity: 1;
+    z-index: 9990;
+  }
+  .chatroom-sidebar-active{
+    right: 0;
+  }
+}
+
+.overlay-bg{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: -1;
+  opacity: 0;
+  cursor: pointer;
+}
+.chatroom-sidebar{
+  width:470px;
+  background: #fff;
+  position: fixed;
+  right: -470px;
+  top:0;
+  height: 100%;
+  bottom: 0;
+  z-index: 9999;
+  padding: 10px 20px 0;
+  overflow-y: auto;
+  -webkit-transition:right 0.2s linear;
+  transition:right 0.2s linear;
+}
+
+.chatroom-sidebar-close-btn{
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top:15px;
+  right:20px;
+  cursor: pointer;
+  -webkit-transition:all 0.2s linear;
+  transition:all 0.2s linear;
+  &:after{
+    width: 23px;
+    height: 1px;
+    content: "";
+    display: block;
+    background-color: #1d374d;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top:9px;
+    left: -2px;
+  }
+  &:before{
+    width: 23px;
+    height: 1px;
+    content: "";
+    display: block;
+    background-color: #1d374d;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top:9px;
+    left: -2px;
+  }
+  &:hover{
+    opacity: 0.6
+  }
+}
+.chatroom-sidebar-title{
+  font-family: RalewayRegular;
+  font-size: 20px;
+  font-weight: 500;
+  color: #1d374d;
+  margin-bottom: 10px;
+  padding-right: 40px;
+  text-align: left;
+}
+
+.chatroom-message{
+  margin-bottom: 6px;
+
+  .message-author {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  .message-created{
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+
+  button, a{
+    font-size: 9px;
+  }
+
+  .alarm-item{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .alarm-item-done{
+    color: #00dd1c;
+  }
+  .alarm-item-error{
+    color: #ff251f;
+  }
+
+  .usera-message{
+    margin-right: 50px;
+    padding: 10px;
+    background-color: #c1fdff;
+  }
+
+  .userb-message{
+    margin-left: 50px;
+    padding: 10px;
+    background-color: #b2ffc5;
+  }
+}
+

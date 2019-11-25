@@ -1,0 +1,70 @@
+#filter-component {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  color: #212529;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  form {
+    textarea {
+      resize: none;
+      border-color: rgba(0, 0, 0, 0.125);
+      border-radius: 4px !important;
+
+      &:focus {
+        background-color: #fff !important;
+        border-color: rgba(0, 0, 0, 0.125);
+        outline: none;
+        box-shadow: none;
+      }
+
+      &.validation-error {
+        border-color: #dc3545;
+      }
+    }
+  }
+
+  .btn {
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .app-filter-wrapper {
+    flex: 0 0 1150px;
+    max-width: 1150px;
+    padding-top: 15px;
+
+    .total {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 12px 20px;
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      border-radius: 4px;
+
+      .info {
+        margin-right: auto;
+        font-size: 20px;
+      }
+
+      .save-as {
+        margin-left: 20px;
+      }
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}
